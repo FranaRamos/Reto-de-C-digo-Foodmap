@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>App de Comida</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Indie+Flower" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="splash">
+		<h1 class="titleSplash">Sírvase</h1>
+	</div>
+<!-- header -->
+	<header>
+		<div class="modal">
+			<div class="container">
+				<article>
+					<h2>Comida cerca de ti.</h2>
+					<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.2653177817633!2d-70.64279588505559!3d-33.416326580783775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5e944ad99cf%3A0x7e59937a4683b289!2sPuma%2C+Recoleta%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1513200073886" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</article>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 title">
+						<h2>Sírvase</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- mapa modal -->
+	<section class="explore">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<h4>¿Dónde estás?</h4>
+					<button type="button" id="open" class="btn btn-success">Revisar el mapa</button>
+				</div>
+			</div>
+<!-- Lista de restaurantes -->
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<h4>¿Qué tipo de comida buscas?</h4>
+					<div class="panel-group">
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h6 class="panel-title">
+					        <a data-toggle="collapse" href="#collapse1">Lista de tipos...</a>
+					      </h6>
+					    </div>
+
+					    <div id="collapse1" class="panel-collapse collapse">
+					      <ul class="list-group">
+					      	<li class="list-group-item"><a href="#" class="categoryItem" category="all">Todo</a></li>
+					        <li class="list-group-item"><a href="#" class="categoryItem" category="china">Comida China</a></li>
+					        <li class="list-group-item"><a href="#" class="categoryItem" category="italia">Comida Italiana</a></li>
+					        <li class="list-group-item"><a href="#" class="categoryItem" category="japones">Comida Japonesa</a></li>
+					        <li class="list-group-item"><a href="#" class="categoryItem" category="peru">Comida Peruana</a></li>
+					        <li class="list-group-item"><a href="#" class="categoryItem" category="rapida">Comida Rápida</a></li>
+					      </ul>
+					    </div>
+					    <section class="list-img">
+								<div class="img-item" category="comida-china">
+									<img src="assets/images/restaurant/china1.jpg" alt="china">
+									<a href="#">Restaurante "El chinito"</a>
+								</div>
+								<div class="img-item" category="comida-china">
+									<img src="assets/images/restaurant/china2.jpg" alt="china">
+									<a href="#">Restaurante "Fu wha"</a>
+								</div>
+								<div class="img-item" category="comida-italiana">
+									<img src="assets/images/restaurant/italia1.jpg" alt="italia">
+									<a href="#">Restaurante "Bonna Pasta"</a>
+								</div>
+								<div class="img-item" category="comida-japonesa">
+									<img src="assets/images/restaurant/japones1.jpg" alt="japon">
+									<a href="#">Restaurante "Kintaro"</a>
+								</div>
+								<div class="img-item" category="comida-japonesa">
+									<img src="assets/images/restaurant/japones2.jpg" alt="japon">
+									<a href="#">Restaurante "Izakaya Yoko"</a>
+								</div>
+								<div class="img-item" category="comida-peruana">
+									<img src="assets/images/restaurant/peru1.jpg" alt="peru">
+									<a href="#">Restaurante "Pizza Andina"</a>
+								</div>
+								<div class="img-item" category="comida-peruana">
+									<img src="assets/images/restaurant/peru2.png" alt="peru">
+									<a href="#">Restaurante "Encanto Limeño"</a>
+								</div>
+								<div class="img-item" category="comida-rapida">
+									<img src="assets/images/restaurant/rapida1.jpg" alt="fastfood">
+									<a href="#">Restaurante "Lleno de Gracia"</a>
+								</div>
+							</section>
+
+					  </div>
+					</div><!-- end -->
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- script -->
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
